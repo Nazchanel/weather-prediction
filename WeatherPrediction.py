@@ -4,13 +4,11 @@ import meteostat
 import pandas as pd
 import numpy as np
 import tensorflow as tf
-from keras.layers import MaxPooling2D, Conv2D, Flatten, concatenate, Dense
 from tensorflow.keras import *
-from keras import Model
 import geocoder
 import tkinter as tk
 from tkinter.font import Font
-from meteostat import Normals, units, Daily
+from meteostat import *
 
 posi = geocoder.ip('me').latlng
 
